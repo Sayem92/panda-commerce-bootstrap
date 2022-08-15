@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="bodyfull">
   <header class="container">
     <nav class="navbar navbar-expand-lg fixed-top bg-light">
       <div class="container">
@@ -38,9 +38,8 @@
 
         </div>
       </div>
-    </nav>
-    <!----------------------- 
-        <!----------------------- 
+    </nav> 
+         
     <!----------------------- 
                 carousel start 
         ---------------------- -->
@@ -52,7 +51,7 @@
             <div class="row">
               <div class="col-lg-7 d-flex align-items-center">
                 <div>
-                  <h2>Cool Dude Headphone</h2>
+                  <h2 class="h2-color">Cool Dude Headphone</h2>
                   <p>This is the best headphone in the world for people who just want to waste time in front of funky
                     world.</p>
                   <h1>$420</h1>
@@ -69,7 +68,7 @@
             <div class="row">
               <div class="col-lg-7 d-flex align-items-center">
                 <div>
-                  <h2>Mega LCD TV For Sports</h2>
+                  <h2 class="h2-color">Mega LCD TV For Sports</h2>
                   <p>This is the best headphone in the world for people who just want to waste time in front of funky
                     world.</p>
                   <h1>$1220</h1>
@@ -86,7 +85,7 @@
             <div class="row">
               <div class="col-lg-7 d-flex align-items-center">
                 <div>
-                  <h2>X-Box for your living room</h2>
+                  <h2 class="h2-color">X-Box for your living room</h2>
                   <p>This is the best headphone in the world for people who just want to waste time in front of funky
                     world.</p>
                   <h1>$600</h1>
@@ -116,7 +115,7 @@
   </header>
 
     <main>
-    <!--catagory 3 bag watch sho gutter start  -->
+    <!-------------------catagory 3 bag watch sho gutter start  -------------------->
     <section>
       <div class="container text-center my-5">
         <div class="row g-4 catagories">
@@ -146,7 +145,7 @@
 
     <!-- shoes kaj start -->
     <section class="container my-5" id="shoes">
-      <h2>Shoes</h2>
+      <h2 class="h2-color">Shoes</h2>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         <div class="col">
           <div class="card h-100 border border-0 shadow-lg">
@@ -157,8 +156,8 @@
               </p>
             </div>
             <div class="m-3">
-              <h2>$120</h2>
-              <div class="btn panda-btn-buy-now">Buy Now</div>
+              <h2 class="h2-color">$120</h2>
+              <div onclick="madeNew()" class="btn panda-btn-buy-now">Buy Now</div>
             </div>
           </div>
         </div>
@@ -171,7 +170,7 @@
 
             </div>
             <div class="m-3">
-              <h2>$320</h2>
+              <h2 class="h2-color">$320</h2>
               <div class="btn panda-btn-buy-now">Buy Now</div>
             </div>
           </div>
@@ -185,7 +184,7 @@
               </p>
             </div>
             <div class="m-3">
-              <h2>$350</h2>
+              <h2 class="h2-color">$350</h2>
               <div class="btn panda-btn-buy-now">Buy Now</div>
             </div>
           </div>
@@ -197,14 +196,14 @@
     <!--------------------- Backpack section start --------------- -->
 
     <section class="container my-5" id="backpack">
-      <h2>Backpack</h2>
+      <h2 class="h2-color">Backpack</h2>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         <div class="col">
           <div class="card h-100 border border-0 shadow-lg">
-            <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
+            <img onmouseenter="setNewImg()" onmouseout="setOldImg()" id="bag1" src="images/bags/bag-1.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Red Laltu Bag</h5>
-              <h2>$120</h2>
+              <h2 class="h2-color">$120</h2>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                 content. This content is a little bit longer.</p>
             </div>
@@ -218,7 +217,7 @@
             <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Blue Niltu Bag</h5>
-              <h2>$320</h2>
+              <h2 class="h2-color">$320</h2>
               <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
             </div>
             <div class="m-3">
@@ -231,7 +230,7 @@
             <img src="images/bags/bag-3.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Black Kaltu Bag</h5>
-              <h2>$169</h2>
+              <h2 class="h2-color">$169</h2>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                 content. This card has even longer content than the first to show that equal height action.</p>
             </div>
@@ -249,13 +248,13 @@
 
     <section style="height:300px ;" class="container d-flex justify-content-center align-items-center rounded-3 panda-bg-info" id="subscribe">
       <div>
-        <h2>LET'S STAY IN TOUCH</h2>
+        <h2 class="h2-color">LET'S STAY IN TOUCH</h2>
         <p>Get updates on sales, specials and more</p>
         <form>
           <div class="mb-1">
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Please type email">
           </div>
-          <button type="submit" class="btn panda-btn-buy-now">Submit</button>
+          <button id="button-submit" type="submit" class="btn panda-btn-buy-now" disabled>Submit</button>
         </form>
       </div>
     </section>
@@ -265,8 +264,10 @@
     <p><small>©2022. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
+  integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+  crossorigin="anonymous"></script>
+  
+  <script src="js/first.js"></script>
 </body>
 
 </html>
