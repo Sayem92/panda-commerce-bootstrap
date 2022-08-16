@@ -31,11 +31,12 @@ function madeNew(){
 
 //------------------------------------------    6    ----------------------------------
 // page ar buy now button a click kolle page teke out hoyhe jabe mane nai.
-// carosel ar button gula delete hoy na ?????????????
+// carosel ar button gula delete hoy na == button gula upore arekta jinis aice tai click hoy na tai remove hoy na - w-100 den kaj hobe
  const allButton= document.getElementsByClassName('panda-btn-buy-now');
  for( const button of allButton){
      button.addEventListener('click',function(event){
-     event.target.parentNode.removeChild(event.target)
+     event.target.remove()
+     
      });
  };
 //------------------------------------------    7   ----------------------------------
